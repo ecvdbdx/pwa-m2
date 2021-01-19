@@ -4,7 +4,8 @@
   "description": "The repo to learn about PWAs",
   "main": "index.js",
   "scripts": {
-    "00-basic-example": "nodemon 00-basic-example/server.js"
+    "00-basic-example": "nodemon 00-basic-example/server.js",
+    "01-lifecycles": "nodemon 01-lifecycles/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
