@@ -1,4 +1,9 @@
 self.addEventListener("install", (event) => {
+  console.log("[SW] Installation event", event);
+
+  /* Force new installed worker to activate */
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open("v1").then((cache) => {
       return cache.addAll(["/"]);
@@ -6,7 +11,12 @@ self.addEventListener("install", (event) => {
   );
 });
 
+self.addEventListener("activate", (event) => {
+  console.log("[SW] Activation event", event);
+});
+
 self.addEventListener("fetch", (event) => {
+  console.log("[SW] Fetch event", event);
   event.respondWith(
     caches
       .match(event.request)

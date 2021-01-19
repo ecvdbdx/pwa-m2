@@ -13,7 +13,7 @@
         navigator.serviceWorker
           .register("/sw.js", { scope: "/" })
           .then(() => {
-            console.log("Service worker correctly registered");
+            console.log("[DOCUMENT] - Service worker registered");
           })
           .catch((error) => {
             console.log(error);
