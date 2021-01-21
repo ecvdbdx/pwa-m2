@@ -5,6 +5,6 @@ const app = express();
 /* In real life, static files are better served by a web server like Apache or NginX */
 app.use("/", express.static(__dirname + "/public"));
 
-app.listen("8001", () => {
-  console.log("App started on port 8001");
+app.listen("8002", () => {
+  console.log("App started on port 8002");
 });
