@@ -7,7 +7,8 @@
     "00-basic-example": "nodemon 00-basic-example/server.js",
     "01-lifecycles": "nodemon 01-lifecycles/server.js",
     "02-updates": "nodemon 02-updates/server.js",
-    "03-communication": "nodemon 03-communication/server.js"
+    "03-communication": "nodemon 03-communication/server.js",
+    "04-offline-page": "nodemon 04-offline-page/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
