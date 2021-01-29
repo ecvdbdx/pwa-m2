@@ -8,7 +8,8 @@
     "01-lifecycles": "nodemon 01-lifecycles/server.js",
     "02-updates": "nodemon 02-updates/server.js",
     "03-communication": "nodemon 03-communication/server.js",
-    "04-offline-page": "nodemon 04-offline-page/server.js"
+    "04-offline-page": "nodemon 04-offline-page/server.js",
+    "05-dynamic-caching": "nodemon 05-dynamic-caching/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
