@@ -11,7 +11,8 @@
     "04-offline-page": "nodemon 04-offline-page/server.js",
     "05-dynamic-caching": "nodemon 05-dynamic-caching/server.js",
     "06-workbox": "nodemon 06-workbox/server.js",
-    "07-strategies": "nodemon 07-strategies/server.js"
+    "07-strategies": "nodemon 07-strategies/server.js",
+    "08-caches-expiration": "nodemon 08-caches-expiration/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
