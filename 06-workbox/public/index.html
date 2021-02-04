@@ -5,21 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="stylesheet" href="/style.css" />
+    <script src="main.js" defer></script>
     <title>My first PWA</title>
   </head>
   <body>
     <h1>Hello !</h1>
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/sw.js", { scope: "/" })
-          .then(() => {
-            console.log("[DOCUMENT] - Service worker registered");
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }
-    </script>
   </body>
 </html>

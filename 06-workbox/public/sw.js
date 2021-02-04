@@ -1,17 +1,14 @@
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js"
+);
+
 const STATIC_CACHE = "v1.1";
+const { precaching, core } = workbox;
 
-self.addEventListener("install", (event) => {
-  console.log("[SW] Installation event", event);
+/* Create cache */
+core.setCacheNameDetails({ prefix: STATIC_CACHE });
 
-  /* Force new installed worker to activate */
-  self.skipWaiting();
-
-  event.waitUntil(
-    caches.open(STATIC_CACHE).then((cache) => {
-      return cache.addAll(["/", "/style.css"]);
-    })
-  );
-});
+precaching.precacheAndRoute([], {});
 
 self.addEventListener("activate", (event) => {
   console.log("[SW] Activation event", event);
