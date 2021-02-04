@@ -12,7 +12,8 @@
     "05-dynamic-caching": "nodemon 05-dynamic-caching/server.js",
     "06-workbox": "nodemon 06-workbox/server.js",
     "07-strategies": "nodemon 07-strategies/server.js",
-    "08-caches-expiration": "nodemon 08-caches-expiration/server.js"
+    "08-caches-expiration": "nodemon 08-caches-expiration/server.js",
+    "09-update-notification": "nodemon 09-update-notification/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
