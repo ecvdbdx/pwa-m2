@@ -12,16 +12,6 @@ precaching.precacheAndRoute([], {});
 
 self.addEventListener("activate", (event) => {
   console.log("[SW] Activation event", event);
-
-  caches.keys().then((cacheNames) => {
-    return Promise.all(
-      cacheNames.map((cacheName) => {
-        if (cacheName !== STATIC_CACHE) {
-          caches.delete(cacheName);
-        }
-      })
-    );
-  });
 });
 
 self.addEventListener("fetch", (event) => {
