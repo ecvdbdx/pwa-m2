@@ -13,11 +13,13 @@
     "06-workbox": "nodemon 06-workbox/server.js",
     "07-strategies": "nodemon 07-strategies/server.js",
     "08-caches-expiration": "nodemon 08-caches-expiration/server.js",
-    "09-update-notification": "nodemon 09-update-notification/server.js"
+    "09-update-notification": "nodemon 09-update-notification/server.js",
+    "10-background-sync": "nodemon 10-background-sync/server.js"
   },
   "author": "Clément Ollivier",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
