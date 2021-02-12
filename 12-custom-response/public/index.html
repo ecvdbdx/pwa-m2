@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <title>My first PWA</title>
+  </head>
+  <body>
+    <h1>
+      Stop, who approaches the bridge of death <br />
+      Must answer me these questions <br />
+      three, 'ere the other side he see
+    </h1>
+    <div>
+      <p id="responseWrapper"></p>
+    </div>
+    <form method="POST" action="/answers" id="form">
+      <div class="form-part">
+        <label for="name">What is your name? </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="form-part">
+        <label for="quest">What is your quest? </label>
+        <input type="text" name="quest" id="quest" />
+      </div>
+      <div class="form-part">
+        <label for="velocity"
+          >What is the air-speed velocity of an unladen swallow?
+        </label>
+        <input type="text" name="velocity" id="velocity" />
+      </div>
+      <div class="form-part">
+        <input type="submit" value="Right, off you go" />
+      </div>
+    </form>
+  </body>
+</html>
