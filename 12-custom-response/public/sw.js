@@ -118,9 +118,11 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
       /* If an error occurs while sending data, push request to the queue to be replayed on sync event */
-      const promiseChain = fetch(event.request.clone()).catch(async () => {
-        await bgSyncQueue.pushRequest({ request: event.request });
-      });
+      const promiseChain = fetch(event.request.clone())
+        .then((res) => res)
+        .catch(async () => {
+          await bgSyncQueue.pushRequest({ request: event.request });
+        });
 
       event.waitUntil(promiseChain);
 

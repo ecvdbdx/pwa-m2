@@ -55,8 +55,5 @@ form.addEventListener("submit", function (event) {
     })
     .then((jsonResponse) => {
       responseWrapper.innerText = jsonResponse.data;
-    })
-    .catch((err) => {
-      console.log(err);
     });
 });
